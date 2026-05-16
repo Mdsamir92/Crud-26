@@ -23,18 +23,6 @@ const GetUser = () => {
 
   const navigate = useNavigate();
 
-  // const fetchData = async () => {
-  //   try {
-  //     const response = await axios.get('https://632c652f5568d3cad884c4bc.mockapi.io/Crud-Youtube');
-  //     setData(response.data);
-  //   } catch (error) {
-  //     console.error('Error fetching data:', error);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
-
   const fetchData = async () => {
     try {
       const response = await getUsers();
@@ -50,18 +38,6 @@ const GetUser = () => {
     fetchData();
   }, []);
 
-  // const handleDelete = (id) => {
-  //   axios.delete(`https://632c652f5568d3cad884c4bc.mockapi.io/Crud-Youtube/${id}`)
-  //     .then(() => {
-  //       fetchData();
-  //     });
-  // };
-
-  // const confirmDelete = () => {
-  //   axios.delete(`https://632c652f5568d3cad884c4bc.mockapi.io/Crud-Youtube/${deleteId}`)
-  //     .then(() => fetchData());
-  //   setShowModal(false);
-  // };
 
   const confirmDelete = async () => {
     try {
@@ -74,13 +50,6 @@ const GetUser = () => {
       console.error("Delete Error:", error);
     }
   };
-
-  // ⭐ Search Filter
-  // const filteredData = data.filter(user =>
-  //   user.name.toLowerCase().includes(search.toLowerCase()) ||
-  //   user.email.toLowerCase().includes(search.toLowerCase()) ||
-  //   (user.phone || "").toLowerCase().includes(search.toLowerCase())
-  // );
 
 
   const filteredData = useMemo(() => {
