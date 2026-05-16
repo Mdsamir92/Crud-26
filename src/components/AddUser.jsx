@@ -41,29 +41,7 @@ const handleSubmit = async (e) => {
   }
 };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const response = await axios.post(
-  //       'https://632c652f5568d3cad884c4bc.mockapi.io/Crud-Youtube',formData
-  //     );
-  //     console.log('Success:', response.data);
-  //     alert('Data submitted successfully!');
-  //     navigate("/users");
-  //   } catch (error) {
-  //     console.error('Error submitting data:', error);
-  //     alert('Failed to submit data.');
-  //   }
-  // };
 
-
-  // if (loading) {
-  //   return (
-  //     <div className="flex justify-center items-center h-screen">
-  //       <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-  //     </div>
-  //   );
-  // }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-white px-4">
