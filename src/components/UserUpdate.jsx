@@ -17,22 +17,6 @@ const UserUpdate = () => {
 
   const [loading, setLoading] = useState(true);
 
-  // Fetch user with id
-  // const fetchUser = async () => {
-  //   try {
-  //    const res = await axios.get(`https://632c652f5568d3cad884c4bc.mockapi.io/Crud-Youtube/${id}`);
-  //     setFormData({
-  //       name: res.data.name,
-  //       email: res.data.email,
-  //       phone: res.data.phone || "",
-  //     });
-  //   } catch (err) {
-  //     console.error(err);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
   const fetchUser = async () => {
     try {
  
@@ -60,19 +44,6 @@ const UserUpdate = () => {
       [e.target.name]: e.target.value,
     }));
   };
-
-  // const handleUpdate = async () => {
-  //   try {
-  //     await axios.put(
-  //       `https://632c652f5568d3cad884c4bc.mockapi.io/Crud-Youtube/${id}`,
-  //       formData
-  //     );
-  //     alert("User updated successfully!");
-  //     navigate("/users");
-  //   } catch (err) {
-  //     console.error(err);
-  //   }
-  // };
 
   const handleUpdate = async () => {
     try {
